@@ -9,7 +9,7 @@ from custom_components.ecoflow_cloud.sensor import LevelSensorEntity, RemainSens
     CyclesSensorEntity, \
     InWattsSensorEntity, OutWattsSensorEntity, MilliVoltSensorEntity, InAmpSensorEntity, \
     InMilliVoltSensorEntity, OutMilliVoltSensorEntity, CapacitySensorEntity, QuotaStatusSensorEntity
-from custom_components.ecoflow_cloud.switch import BeeperEntity, EnabledEntity
+from custom_components.ecoflow_cloud.switch import BeeperEntity, EnabledEntity, DisabledEntity
 
 
 class Delta2Max(BaseDevice):
