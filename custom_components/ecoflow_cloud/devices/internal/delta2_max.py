@@ -209,6 +209,11 @@ class Delta2Max(BaseDevice):
                                                     "minChgSoc": 0,
                                                     "isConfig": value,
                                                     "minDsgSoc": 0}}),
+
+            DisabledEntity(client, self, "inv.chgPauseFlag", const.AC_CHARGING_ENABLED,
+                          lambda value: {"moduleType": 3,
+                                         "operateType": "acChgCfg",
+                                         "params": {"chgPauseFlag": value}}),
         ]
 
     def selects(self, client: EcoflowApiClient) -> list[BaseSelectEntity]:
