@@ -210,7 +210,7 @@ class Delta2Max(BaseDevice):
                                                     "isConfig": value,
                                                     "minDsgSoc": 0}}),
 
-            DisabledEntity(client, self, "inv.chgPauseFlag", const.AC_CHARGING_ENABLED,
+            EnabledEntity(client, self, "inv.chgPauseFlag", const.AC_CHARGING_PAUSED,
                           lambda value: {"moduleType": 3,
                                          "operateType": "acChgCfg",
                                          "params": {"chgPauseFlag": value}}),
